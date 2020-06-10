@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		* {
+			font-family: 'Roboto Mono', monospace;
+		}
+		div.grid{
+			display: grid;
+			grid-template-columns: 33% 33% 33%;
+			grid-gap: 5px;
+		}
+
+
+		img {
+			width: 50%;
+		}
+
+
+
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 id="text"></h1>
+
+	<div class="grid">
+		
+		<div>
+			<img class="a bell" src="./img/bell.png">
+		</div>
+		
+		<div>
+			<img class="santa" src="./img/santa.png">
+		</div>
+
+		<div>
+			<img class="a gift" src="./img/gift.png">
+		</div>
+				
+		<div>
+			<img class="santa" src="./img/santa.png">
+		</div>
+
+		<div>
+			<img class="a bell" src="./img/bell.png">
+		</div>
+
+		<div>
+			<img class="a gift" src="./img/gift.png">
+		</div>
+
+		<div>
+			<img class="a gift" src="./img/gift.png">
+		</div>
+
+		<div>
+			<img class="santa" src="./img/santa.png">
+		</div>
+				
+		<div>
+			<img  class="a bell" src="./img/bell.png">
+		</div>
+
+
+	</div>
+
+	<script>
+
+		$(document).ready(function() {
+		
+		$("img").click(function() {
+			var content = $(this).attr('class')
+;
+			$("#text").text("This is " + content);
+		});
+
+		$('.santa').click(function() {
+        	$(this).hide()
+    	})
+
+		});
+
+		 
+	</script>
+</body>
+</html>

@@ -16,7 +16,7 @@
 			height: 40vh;
 			opacity: 0.8;
 		}
-		h1, h2 {
+		h1, h2, p {
 			padding-left: 5%;
 			font-family: 'Roboto Mono', monospace;
 		}
@@ -45,14 +45,30 @@
 		for (person of family) {
 
 			getcontainer.innerHTML +=
-						`<div class="${person.relation}"><img src=\"./img/${person.image}\">
+						`<div hobby="${person.hobby}" food="${person.favoritefood}" dislikes="${person.dislikes}" class="${person.relation} person"><img src=\"./img/${person.image}\">
 							<h1>${person.name}</h1>
 							<h2>${person.relation}</h2>
+							<p class="${person.name}"></p>
 						</div>`
-
-
 		}
+		
+		$(document).ready(function() {
+		
+		$(`.person`).click(
+			function() {
 
+				let hobby = $(this).attr("hobby");
+				let food = $(this).attr("food");
+				let dislikes = $(this).attr("dislikes");
+				$(this).append(`<p>Hobby is ${hobby}<br> Favorite food is ${food}<br> And hates ${dislikes}</p>`);
+			});
+
+			$(".person").dblclick(function() {
+				$("p").hide();
+				});
+
+
+		});
 
 		 
 	</script>

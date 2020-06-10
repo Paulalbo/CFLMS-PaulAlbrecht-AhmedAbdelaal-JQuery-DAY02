@@ -1,39 +1,66 @@
 data =`[{
     "name" : "Andreas",
     "image" : "father.jpg",
-    "relation" : "parent"
+    "relation" : "parent",
+    "favoritefood" : "Pizza",
+    "hobby" : "Fishing",
+    "dislikes" : "Trump"
 },{
     "name" : "Susanne",
     "image" : "mother.jpg",
-    "relation" : "parent"
+    "relation" : "parent",
+    "favoritefood" : "Pasta",
+    "hobby" : "Baseball",
+    "dislikes" : "Big groups"
 },{
     "name" : "Anna",
     "image" : "sister01.jpg",
-    "relation" : "sibling"
+    "relation" : "sibling",
+    "favoritefood" : "Lasagna",
+    "hobby" : "Cycling",
+    "dislikes" : "Walking"
 },{
     "name" : "Helene",
     "image" : "sister02.jpg",
-    "relation" : "sibling"
+    "relation" : "sibling",
+    "favoritefood" : "Fish 'n' Chips",
+    "hobby" : "Walking",
+    "dislikes" : "Cycling"
 },{
     "name" : "Paul",
     "image" : "brother04.jpg",
-    "relation" : "sibling"
+    "relation" : "sibling",
+    "favoritefood" : "Kebap",
+    "hobby" : "Acrobatics",
+    "dislikes" : "Broccoli"
 },{
     "name" : "Luise",
     "image" : "sister03.jpg",
-    "relation" : "sibling"
+    "relation" : "sibling",
+    "favoritefood" : "Spinach",
+    "hobby" : "Nothing",
+    "dislikes" : "Bush"
 },{
     "name" : "Alexander",
     "image" : "friend01.jpg",
-    "relation" : "friend"
+    "relation" : "friend",
+    "favoritefood" : "Burger",
+    "hobby" : "Gaming",
+    "dislikes" : "Sad movies"
 },{
     "name" : "Jakob",
     "image" : "friend02.jpg",
-    "relation" : "friend"
+    "relation" : "friend",
+    "favoritefood" : "K&auml;sesp&auml;tzle",
+    "hobby" : "Coding",
+    "dislikes" : "Pigeons"
 },{
     "name" : "Chris",
     "image" : "friend03.jpg",
-    "relation" : "friend"
+    "relation" : "friend",
+    "favoritefood" : "Kaiserschmarrn",
+    "hobby" : "Cooking",
+    "dislikes" : "Cartoons"
 }
 ]`;
 

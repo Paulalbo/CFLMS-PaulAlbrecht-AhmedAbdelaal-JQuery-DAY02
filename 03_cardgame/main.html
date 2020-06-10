@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .cards, .empty {
+            display: grid;
+			grid-template-columns: 15% 15% 15% 15% 15%;
+			grid-gap: 10px;
+        }
+
+        img {
+            width:10vw
+        }
+
+        div.empty div {
+            background-color: grey;
+            min-height: 150px;
+            min-width: 35px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="cards">
+
+    </div>
+    <div class="empty">
+
+    </div>
+    <script>
+        var imgArray = ['2C.png', '2D.png', '2H.png', '2S.png', '3C.png', '3D.png', '3H.png', '3S.png','4C.png', '4D.png', '4H.png', '4S.png'];
+        var basePath = "./img/";
+
+
+
+            for (i = 0; i<10; i++) {
+                var rand = imgArray[Math.floor(Math.random() * imgArray.length)];
+                $(".cards").append("<div>" + "<img src=\"" + basePath + rand + "\">" + "</div>");
+
+                $(".empty").append("<div class=\"" + rand + "\">" + "</div>");
+
+                }
+            
+
+
+                $( function() {
+                $( "div.cards div" ).draggable();
+                $( "div.empty div" ).droppable({
+                  drop: function( event, ui ) {
+                    $( this )
+                      .addClass( "ui-state-highlight" )
+                      .find( "p" )
+                        .html( "Dropped!" );
+      }
+    });
+  } );
+
+    </script>
+</body>
+</html>
+
